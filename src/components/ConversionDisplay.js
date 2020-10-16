@@ -76,7 +76,6 @@ const ConversionDisplay = ({ type }) => {
 
             {type === "past" ? (
                 <div>
-                    <h3>{day ? day : "Datum wählen"}</h3>
                     <DayPicker
                         onDayClick={(day) =>
                             setDay(day.toISOString().split("T")[0])
